@@ -7,8 +7,5 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . /app
 
-# Install flake8
-RUN pip install --no-cache-dir flake8
-
 # Command to run the app
 CMD ["python", "app.py"]
